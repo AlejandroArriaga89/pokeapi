@@ -27,3 +27,5 @@ app.put("/team", () => {
 app.listen(port, () => {
   console.log("Server started at port " + port);
 });
+
+exports.app = app;
