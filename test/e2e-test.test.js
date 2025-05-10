@@ -11,10 +11,8 @@ describe("Suite de prueba e2e para el curso", () => {
       .request(app)
       .get("/")
       .end((err, res) => {
-        console.log("A");
-        chai.assert.equal(res.text, "Hello World");
+        chai.assert.equal(res.text, "Hello World!");
         done();
       });
-    console.log("B");
   });
 });

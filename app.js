@@ -5,15 +5,16 @@ const port = 3000;
 app.get("/", (req, res) => {
   //req => request, la peticion
   //res =>response, la respuesta
-  res.status(200).send("Hello World");
+  res.status(200).send("Hello World!");
 });
 
+app.post("/login", (req, res) => {});
 app.post("/team/pokemons", () => {
   res.status(200).send("Hello World");
 });
 
-app.get("/team", () => {
-  res.send("Hello World");
+app.get("/team", (req, res) => {
+  res.status(200).send("Hello World");
 });
 
 app.delete("/team/pokemons/:pokeid", () => {
